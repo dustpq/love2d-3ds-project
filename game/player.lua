@@ -1,8 +1,7 @@
 require("player_input") -- Load player input handling
-local ASSET_IMAGE = love.filesystem.getSourceBaseDirectory() .. "/assets/images/"
 
 local player = {
-    sprite = love.graphics.newImage(ASSET_IMAGE .. "SOUL.png"),
+    sprite = nil,
     x = 100,
     y = 100,
     speed = 200,
@@ -29,6 +28,9 @@ local player = {
 }
 
 function AddPlayer()
+    if player.sprite == nil then
+        player.sprite = love.graphics.newImage("../assets/images/SOUL.png")
+    end
     return player
 end
 
