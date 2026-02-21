@@ -18,7 +18,7 @@ function love.load()
 end
 
 function love.update(dt)-- Update game logic here
-    Player.update(dt)
+    Player:update(dt)
 end
 
 function love.draw(screen)
@@ -26,7 +26,7 @@ function love.draw(screen)
         local width, height = love.graphics.getDimensions(screen)
         love.graphics.print("this da top (left) screen", width / 2, height / 2)
         love.graphics.setBackgroundColor(0.5, 0.5, 0.5) -- Set background color to gray
-        Player.draw()
+        Player:draw()
 
     elseif screen == "bottom" then
         local width, height = love.graphics.getDimensions(screen)
