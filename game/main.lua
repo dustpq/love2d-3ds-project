@@ -1,5 +1,5 @@
 -- Add the libs directory to the package path so that libs can be used
-package.path = package.path .. ";libs/?.lua;libs/?/init.lua"
+package.path = package.path .. ";game/libs/?.lua;game/libs/?/init.lua"
 
 -- Load and initialize the nest library for 3DS mode
 require("nest").init({

@@ -29,7 +29,7 @@ local player = {
 
 function AddPlayer()
     if player.sprite == nil then
-        player.sprite = love.graphics.newImage("../assets/images/SOUL.png")
+        player.sprite = love.graphics.newImage("assets/images/SOUL.png")
     end
     return player
 end
