@@ -1,0 +1,14 @@
+[metadata]
+name = "game"
+title = "game"
+author = "dustpq"
+description = "gaming"
+version = "0.1.0"
+
+[metadata.icons]
+ctr = "assets/images/icon.png"
+
+[build]
+targets = ["ctr"]
+source = "game"
+packaged = true

@@ -1,0 +1,15 @@
+{
+    "runtime": {
+        "version": "LuaJIT"
+    },
+    "diagnostics": {
+        "globals": ["love",
+            "dpadLeft",
+            "testInputs"]
+    },
+    "workspace": {
+        "library": [
+            "${3rd}/love2d/library"
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+# macOS
+._*
+*/._*
+*/*/._*
+.DS_Store
+*/.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swj
+
+# Dependencies
+node_modules/
+venv/
+.env
+
+# Build
+dist/
+build/
+*.o
+*.a
+*.so
+
+# Lua compiled files
+*.luac
+
+# Backup and temporary files
+*.bak
+*.tmp
+
+# Sublime Text files
+*.sublime-*
