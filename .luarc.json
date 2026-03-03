@@ -4,12 +4,14 @@
     },
     "diagnostics": {
         "globals": ["love",
-            "dpadLeft",
-            "testInputs"]
+            "dt"]
     },
     "workspace": {
         "library": [
             "${3rd}/love2d/library"
         ]
-    }
+    },
+    "diagnostics.disable": [
+        "duplicate-set-field"
+    ]
 }
