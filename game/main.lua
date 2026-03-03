@@ -5,14 +5,12 @@ package.path = package.path .. ";game/libs/?.lua;game/libs/?/init.lua"
 require("nest").init({
     console = "3ds",  -- Enable 3DS mode
     scale = 1,        -- Scale the window size (1x by default)
-    emulateJoystick = true  -- Enable joystick emulation via keyboard
 })
 
 require("player") -- Load the player module, which includes player input handling
 
 function love.load()
     -- Load assets and initialize game state here
-    ---@diagnostic disable-next-line: undefined-field
     love.graphics.set3D(false)
     Player = AddPlayer() -- Create the player object
 end
